@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web Responsiva</title>
+  <style>
+    /* Estilo geral para a página */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container da página */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Seções */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    /* Artigos */
+    .content div {
+      background-color: #f4f4f4;
+      padding: 20px;
+      flex: 1 1 300px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Media queries para responsividade */
+    @media (max-width: 768px) {
+      header, footer {
+        padding: 10px;
+      }
+      .content {
+        flex-direction: column;
+      }
+      .content div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Minha Página Poggers</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="content">
+      <div>
+        <h2>Matemática</h2>
+        <p>Soma, subtração, multiplicação e divisão.</p>
+      </div>
+      <div>
+        <h2>Língua Portuguesa</h2>
+        <p>Ortografia, pontuação e fonética.</p>
+      </div>
+      <div>
+        <h2>Ciências da Natureza</h2>
+        <p>Química, Física e Biologia.</p>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2024 Minha Página. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
